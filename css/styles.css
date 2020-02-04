@@ -85,28 +85,65 @@ main {
 }
 
 .container-a-left {
-  width: 68%;
+  width: 67%;
   height: inherit;
   margin: 5px;
 }
 
 .article-img-one {
   position: absolute;
-  width: 68%;
+  width: 67%;
   height: inherit;
 }
 
 .article-gradient-one {
   position: absolute;
-  background: linear-gradient(180deg, #f16555, #fff, #000);
-  width: 68%;
+  background: linear-gradient(180deg, #f16555, #fff, #000 80%);
+  width: 67%;
   height: inherit;
   opacity: 0.8;
+}
+
+.article-date {
+  margin-top: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.tnw-logo {
+  position: absolute;
+  width: 400px;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+}
+
+.container-a-left-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.container-a-left-bottom h2 {
+  font-size: 56px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  line-height: 0.9em;
+}
+
+.container-a-left-bottom h3 {
+  font-size: 28px;
 }
 
 .article-img-one,
 .article-gradient-one {
   height: 504px;
+}
+
+.author {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
 }
 
 .container-a-right {
@@ -124,7 +161,7 @@ main {
 
 .article-gradient-two {
   position: absolute;
-  background: linear-gradient(180deg, #fff, #000);
+  background: linear-gradient(180deg, #fff, #000 80%);
   width: 30%;
   height: 50%;
   opacity: 0.9;
@@ -134,6 +171,16 @@ main {
   position: absolute;
   width: 30%;
   height: 50%;
+}
+
+.img-three,
+.grad-three {
+  border-bottom: 4px solid #fff;
+}
+
+.img-two,
+.grad-two {
+  border-top: 4px solid #fff;
 }
 
 /* media queries */
