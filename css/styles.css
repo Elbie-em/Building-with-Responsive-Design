@@ -273,6 +273,7 @@ main {
 .funding-article {
   display: flex;
   flex-direction: column;
+  position: relative;
   padding: 10px;
 }
 
