@@ -348,6 +348,8 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 45px;
 }
 
 .popular-article {
@@ -364,10 +366,68 @@ main {
 }
 
 .article-title-plus-image {
+  position: relative;
   width: 100%;
   height: 276px;
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Whatsapp-bug-warning-796x420.jpg");
   background-size: 100% 100%;
+}
+
+.image-a {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Whatsapp-bug-warning-796x420.jpg");
+}
+
+.image-b {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/what-is-macro-lens-header-image.png");
+}
+
+.image-c {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://img-cdn.tnwcdn.com/image/neural?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FSoldier-Flickr.png&signature=5a8bd28eaf8fde620d99817248061090");
+}
+
+.image-d {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04-796x448.png ");
+}
+
+.image-e {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/buzzy-bees.jpg");
+}
+
+.image-f {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/israel-tesla-autopilot-phantom-iamge-trick-danger-systems-driver-aids-hack-796x448.jpg ");
+}
+
+.image-g {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-796x419.jpg");
+}
+
+.image-h {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cbsnews1.cbsistatic.com/hub/i/r/2015/03/07/0a13c07c-f23f-454a-9227-cd48ab0bda34/thumbnail/1200x630g2/09e792b12e99ff3a5ee357901eb660eb/daveed-diggs-okieriete-onaodowan-anthony-ramos-lin-manuel-miranda-hamilton-joan-marcus-620.jpg");
+}
+
+.article-inner-text {
+  position: absolute;
+  bottom: 15px;
+  color: #fff;
+  padding: 14px;
+}
+
+.article-title-plus-image h5 {
+  font-size: 13px;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.7em;
+}
+
+.article-title-plus-image h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2em;
+}
+
+.article-title-plus-image p {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  margin-top: 8px;
 }
 
 .latest-internal-link {
@@ -382,12 +442,14 @@ main {
   height: 96px;
   background-color: #fde7e4;
   padding: 10px 14px 0;
+  color: #f42;
 }
 
 .latest-link h5 {
   font-size: 13px;
   font-family: sans-serif;
   font-weight: 200;
+  line-height: 1.6em;
 }
 
 .latest-link p {
