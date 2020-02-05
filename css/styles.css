@@ -263,6 +263,15 @@ main {
   line-height: 1.6em;
 }
 
+.gap {
+  grid-column-gap: 12px;
+  grid-row-gap: 35px;
+}
+
+.cont-height {
+  height: 300px;
+}
+
 /* media queries */
 @media (max-width: 700px) {
   nav {
