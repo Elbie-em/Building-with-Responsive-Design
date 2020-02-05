@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -195,9 +199,22 @@ main {
   font-weight: bolder;
 }
 
+.latest-news-link h4 {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  margin-right: 30px;
+  margin-top: 8px;
+}
+
+.latest-news-link h4 a {
+  color: #f16555;
+  font-weight: lighter;
+}
+
 .latest-news-section {
   position: relative;
   top: 90px;
+  margin-bottom: 56px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
