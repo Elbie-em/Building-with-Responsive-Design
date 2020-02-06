@@ -713,4 +713,8 @@ footer li {
   .funding-subtitle span {
     display: none;
   }
+
+  .funding-section {
+    grid-template-columns: 1fr;
+  }
 }
