@@ -272,21 +272,6 @@ main {
   height: 300px;
 }
 
-/* media queries */
-@media (max-width: 700px) {
-  nav {
-    height: 78px;
-  }
-
-  .nav-top {
-    display: none;
-  }
-
-  .latest-news-section {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .funding-section {
   position: relative;
   display: grid;
@@ -506,3 +491,54 @@ main {
   color: #f94422;
 }
 
+footer {
+  width: 100%;
+  margin-top: 210px;
+}
+
+.footer-links-social {
+  margin-bottom: 45px;
+}
+
+.footer-links-menu li {
+  margin-right: 15px;
+}
+
+footer li {
+  display: inline;
+}
+
+.fab-circle {
+  background-color: #333;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.footer-wrapper {
+  width: 100%;
+  background-color: #131313;
+  text-align: center;
+  height: 161px;
+  color: #aaa;
+  padding: 46px 0 28px 0;
+  font-size: 13px;
+  font-family: Helvetica, sans-serif;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+  nav {
+    height: 78px;
+  }
+
+  .nav-top {
+    display: none;
+  }
+
+  .latest-news-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
