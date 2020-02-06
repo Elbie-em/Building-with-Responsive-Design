@@ -45,12 +45,28 @@ nav {
   line-height: 30px;
 }
 
+.nav-top li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 .nav-center li {
   display: inline;
   padding: 8px;
   line-height: 46px;
   font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.nav-center li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.menu-icon,
+.search-icon {
+  color: #000;
+  cursor: pointer;
 }
 
 .nav-center {
@@ -119,14 +135,14 @@ main {
 
 .article-img-one {
   position: absolute;
-  width: 67.8%;
+  width: 98%;
   height: inherit;
 }
 
 .article-gradient-one {
   position: absolute;
   background: linear-gradient(180deg, #f16555, #fff, #000 80%);
-  width: 67.8%;
+  width: 98%;
   height: inherit;
   opacity: 0.9;
 }
@@ -145,6 +161,10 @@ main {
   left: 30px;
 }
 
+.tnw-logo:hover {
+  cursor: pointer;
+}
+
 .container-a-left-bottom {
   position: absolute;
   bottom: 20px;
@@ -153,14 +173,23 @@ main {
 }
 
 .container-a-left-bottom h2 {
-  font-size: 56px;
+  font-size: 36px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 0.9em;
 }
 
 .container-a-left-bottom h3 {
   font-size: 28px;
+}
+
+.container-a-left-bottom:hover {
+  cursor: pointer;
+}
+
+.author:hover {
+  color: #a69e9d;
+  cursor: pointer;
 }
 
 .article-img-one,
@@ -180,44 +209,6 @@ main {
   color: #aaa;
 }
 
-.container-a-right {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: inherit;
-  margin: 5px;
-  float: right;
-}
-
-.container-right-inner {
-  width: 100%;
-  height: 50%;
-}
-
-.article-gradient-two {
-  position: absolute;
-  background: linear-gradient(180deg, #fff, #000 80%);
-  width: 30%;
-  height: 6.1%;
-  opacity: 0.9;
-}
-
-.article-img-two {
-  position: absolute;
-  width: 30%;
-  height: 6.1%;
-}
-
-.img-three,
-.grad-three {
-  border-bottom: 8px solid #fff;
-}
-
-.img-two,
-.grad-two {
-  border-top: 6px solid #fff;
-}
-
 .article-section {
   max-width: 1192px;
   margin: 0 auto;
@@ -232,6 +223,17 @@ main {
   font-size: 24px;
   font-family: 'Segoe UI', Verdana, sans-serif;
   font-weight: bolder;
+  text-align: left;
+}
+
+.latest-news-link:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.latest-news-link div {
+  position: absolute;
+  left: 0;
 }
 
 .latest-news-link h4 {
@@ -277,6 +279,10 @@ main {
   height: 145px;
 }
 
+.inner-latest {
+  cursor: pointer;
+}
+
 .inner-deal-thumbnail {
   width: 100%;
   height: 201px;
@@ -309,6 +315,10 @@ main {
   flex-direction: column;
   position: relative;
   padding: 10px;
+}
+
+.funding-article:hover {
+  cursor: pointer;
 }
 
 .omt {
@@ -405,6 +415,10 @@ main {
   background-size: 100% 100%;
 }
 
+.article-title-plus-image:hover {
+  cursor: pointer;
+}
+
 .image-a {
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(17, 17, 17, 1)), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Whatsapp-bug-warning-796x420.jpg");
 }
@@ -442,6 +456,11 @@ main {
   bottom: 15px;
   color: #fff;
   padding: 14px;
+}
+
+.article-inner-text h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .article-title-plus-image h5 {
@@ -514,6 +533,29 @@ main {
   color: #f94422;
 }
 
+.popular-article h1:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.latest-link p:hover {
+  cursor: pointer;
+}
+
+.popular-article ul li a:hover {
+  color: #000;
+}
+
+.inner-latest h3:hover {
+  color: #f94422;
+  text-decoration: underline;
+}
+
+.fab-circle:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+
 footer {
   width: 100%;
   margin-top: 210px;
@@ -527,6 +569,11 @@ footer {
   margin-right: 15px;
 }
 
+.footer-links-menu li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
 footer li {
   display: inline;
 }
@@ -534,6 +581,7 @@ footer li {
 .fab-circle {
   background-color: #333;
   border-radius: 50%;
+  border: 1px solid #333;
   height: 35px;
   width: 35px;
   padding: 20px;
@@ -567,6 +615,11 @@ footer li {
 
 .footer-logo-b {
   width: 65px;
+}
+
+.footer-logo-a:hover,
+.footer-logo-b:hover {
+  cursor: pointer;
 }
 
 /* media queries */
@@ -666,9 +719,8 @@ footer li {
   }
 
   .container-a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    width: 98%;
+    height: 300px;
   }
 
   .container-a-left {
@@ -676,19 +728,8 @@ footer li {
     height: 300px;
   }
 
-  .container-a-right {
-    float: left;
-    width: 100%;
-  }
-
   .container-a-left-bottom h2 {
     font-size: 28px;
-  }
-
-  .article-gradient-two,
-  .article-img-two {
-    height: 3%;
-    width: 97%;
   }
 
   .container-a-left-bottom h3 {
