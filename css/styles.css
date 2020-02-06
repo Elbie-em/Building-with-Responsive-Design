@@ -600,10 +600,16 @@ footer li {
     font-size: 14px;
   }
 
-  .latest-news-link .float-left,
-  .latest-news-link .float-right {
+  .funding-title .float-left,
+  .funding-title .float-right {
     float: none;
     padding-top: 10px;
+  }
+
+  .funding-subtitle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 
   .funding-last {
@@ -612,6 +618,10 @@ footer li {
 
   .funding-section {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .funding-subtitle span {
+    margin: 0 5px;
   }
 }
 
@@ -689,5 +699,18 @@ footer li {
 
   .inner-latest span {
     margin-left: 10px;
+  }
+
+  .funding-subtitle {
+    flex-direction: column-reverse;
+  }
+
+  .funding-subtitle a {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .funding-subtitle span {
+    display: none;
   }
 }
