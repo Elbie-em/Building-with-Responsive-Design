@@ -17,7 +17,21 @@ nav {
   z-index: 2;
 }
 
+.nav-logo {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 106px;
+  background: linear-gradient(to right, rgb(160, 35, 129), #f34423);
+  padding: 16px;
+}
+
 .nav-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #000;
   height: 32px;
   color: rgba(255, 255, 255, 0.6);
@@ -46,10 +60,16 @@ nav {
   clear: left;
 }
 
-.search-icon {
+.search-icon,
+.menu-icon {
   padding: 16px;
   border-left: 1px solid #aaa;
   height: 48px;
+}
+
+.menu-icon {
+  display: none;
+  color: red;
 }
 
 .nav-bottom {
@@ -73,7 +93,8 @@ nav {
 }
 
 .float-right,
-.search-icon {
+.search-icon,
+.menu-icon {
   float: right;
 }
 
@@ -547,13 +568,45 @@ footer li {
 }
 
 /* media queries */
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
+  .tnw-logo,
+  .article-date {
+    display: none;
+  }
+
+  .nav-logo {
+    display: unset;
+  }
+
+  .nav-top {
+    margin-left: 60px;
+  }
+
+  .nav-center {
+    margin-left: 119px;
+  }
+
+}
+
+@media (max-width: 768px) {
   nav {
     height: 78px;
   }
 
   .nav-top {
     display: none;
+  }
+
+  .nav-logo {
+    height: 48px;
+  }
+
+  .nav-center li {
+    display: none;
+  }
+
+  .menu-icon {
+    display: unset;
   }
 
   .latest-news-section {
