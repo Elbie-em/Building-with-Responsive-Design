@@ -272,7 +272,7 @@ main {
 
 .inner-latest-thumbnail {
   width: 100%;
-  height: 127px;
+  height: 136px;
 }
 
 .inner-deal-thumbnail {
@@ -586,8 +586,14 @@ footer li {
     margin-left: 119px;
   }
 
-  
+  .article-img-one,
+  .article-gradient-one {
+    height: 472px;
+  }
 
+  .latest-news-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -611,7 +617,23 @@ footer li {
     display: unset;
   }
 
-  .latest-news-section {
-    grid-template-columns: 1fr 1fr 1fr;
+  .container-a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container-a-left {
+    height: 300px;
+  }
+
+  .container-a-left-bottom h2 {
+    font-size: 28px;
+  }
+
+  .article-img-one,
+  .article-gradient-one {
+    width: 100%;
+    height: 300px;
   }
 }
