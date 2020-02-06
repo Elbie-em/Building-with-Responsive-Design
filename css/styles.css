@@ -165,7 +165,7 @@ main {
 
 .article-img-one,
 .article-gradient-one {
-  height: 525px;
+  height: 527px;
 }
 
 .author {
@@ -186,6 +186,7 @@ main {
   width: 30%;
   height: inherit;
   margin: 5px;
+  float: right;
 }
 
 .container-right-inner {
@@ -587,9 +588,18 @@ footer li {
     margin-left: 119px;
   }
 
+  .container-a-right {
+    height: 469px;
+  }
+
+  .article-gradient-two,
+  .article-img-two {
+    height: 4.5%;
+  }
+
   .article-img-one,
   .article-gradient-one {
-    height: 472px;
+    height: 487px;
   }
 
   .latest-news-section {
@@ -662,11 +672,27 @@ footer li {
   }
 
   .container-a-left {
+    width: 100%;
     height: 300px;
+  }
+
+  .container-a-right {
+    float: left;
+    width: 100%;
   }
 
   .container-a-left-bottom h2 {
     font-size: 28px;
+  }
+
+  .article-gradient-two,
+  .article-img-two {
+    height: 3%;
+    width: 97%;
+  }
+
+  .container-a-left-bottom h3 {
+    font-size: 24px;
   }
 
   .article-section {
