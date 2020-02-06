@@ -63,8 +63,8 @@ nav {
   cursor: pointer;
 }
 
-.menu-icon,
-.search-icon {
+.menu-icon:hover,
+.search-icon:hover {
   color: #000;
   cursor: pointer;
 }
@@ -265,7 +265,7 @@ main {
 .inner-latest h3 {
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Segoe UI', Verdana;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .inner-latest span {
@@ -277,7 +277,7 @@ main {
   height: 145px;
 }
 
-.inner-latest {
+.inner-latest:hover {
   cursor: pointer;
 }
 
