@@ -226,7 +226,7 @@ main {
   position: relative;
   top: 80px;
   left: 10px;
-  color: #f16555;
+  color: #f42;
   font-size: 24px;
   font-family: 'Segoe UI', Verdana, sans-serif;
   font-weight: bolder;
@@ -236,7 +236,7 @@ main {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
   margin-right: 30px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .latest-news-link h4 a {
@@ -593,10 +593,18 @@ footer li {
 
   .latest-news-section {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
   }
 
   .inner-latest h3 {
     font-size: 14px;
+  }
+
+  .latest-news-link .float-left,
+  .latest-news-link .float-right {
+    float: none;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -652,7 +660,6 @@ footer li {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0 auto;
   }
 
   .inner-latest {
@@ -671,6 +678,7 @@ footer li {
     margin-left: 85px;
     padding-top: 5px;
   }
+
   .inner-latest span {
     margin-left: 10px;
   }
