@@ -298,7 +298,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
-  top: 110px;
+  top: 100px;
   margin-bottom: 150px;
 }
 
@@ -604,6 +604,14 @@ footer li {
   .latest-news-link .float-right {
     float: none;
     padding-top: 10px;
+  }
+
+  .funding-last {
+    display: none;
+  }
+
+  .funding-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
